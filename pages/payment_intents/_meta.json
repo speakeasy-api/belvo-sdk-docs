@@ -1,0 +1,14 @@
+{
+  "create_payment_intent": {
+    "title": "Create Payment Intent"
+  },
+  "detail_payment_intent": {
+    "title": "Detail Payment Intent"
+  },
+  "list_payment_intents": {
+    "title": "List Payment Intents"
+  },
+  "patch_payment_intent": {
+    "title": "Patch Payment Intent"
+  }
+}

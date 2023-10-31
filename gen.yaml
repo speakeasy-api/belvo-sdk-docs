@@ -1,0 +1,35 @@
+configVersion: 1.0.0
+generation:
+  comments:
+    disableComments: false
+    omitDescriptionIfSummaryPresent: false
+  baseServerURL: ""
+  sdkClassName: belvo
+  singleTagPerOp: false
+  tagNamespacingDisabled: false
+features:
+  docs:
+    core: 0.27.0
+    deprecations: 0.1.0
+    globalSecurity: 0.1.0
+    globalServerURLs: 0.1.0
+docs:
+  version: ""
+python:
+  version: 1.26.0
+  author: belvo
+  clientServerStatusCodesAsErrors: true
+  description: Python client SDK for belvo's API
+  flattenGlobalSecurity: true
+  installationURL: belvo
+  maxMethodParams: 10
+  packageName: belvo
+  published: true
+typescript:
+  version: 1.21.0
+  author: belvo
+  clientServerStatusCodesAsErrors: true
+  flattenGlobalSecurity: false
+  installationURL: belvo
+  maxMethodParams: 4
+  packageName: belvo

@@ -1,0 +1,11 @@
+{
+  "create_customer": {
+    "title": "Create Customer"
+  },
+  "detail_customer": {
+    "title": "Detail Customer"
+  },
+  "list_customers": {
+    "title": "List Customers"
+  }
+}

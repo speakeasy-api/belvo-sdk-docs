@@ -1,0 +1,37 @@
+{
+  "-- guides": {
+    "title": "Guides",
+    "type": "separator"
+  },
+  "installation": {
+    "title": "Installation"
+  },
+  "-- resources": {
+    "title": "Resources",
+    "type": "separator"
+  },
+  "bank_accounts": {
+    "title": "Bank Accounts"
+  },
+  "customers": {
+    "title": "Customers"
+  },
+  "payment_institutions": {
+    "title": "Payment Institutions"
+  },
+  "payment_intents": {
+    "title": "Payment Intents"
+  },
+  "payment_links": {
+    "title": "Payment Links"
+  },
+  "payment_secret_keys": {
+    "title": "Payment Secret Keys"
+  },
+  "payment_transactions": {
+    "title": "Payment Transactions"
+  },
+  "payment_webhooks": {
+    "title": "Payment Webhooks"
+  }
+}

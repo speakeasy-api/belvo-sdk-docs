@@ -1,0 +1,8 @@
+{
+  "detail_payment_transactions": {
+    "title": "Detail Payment Transactions"
+  },
+  "list_payment_transactions": {
+    "title": "List Payment Transactions"
+  }
+}

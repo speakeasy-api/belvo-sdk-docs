@@ -1,0 +1,11 @@
+{
+  "create_paymentlink": {
+    "title": "Create Paymentlink"
+  },
+  "detail_create_paymentlink": {
+    "title": "Detail Create Paymentlink"
+  },
+  "list_payment_links": {
+    "title": "List Payment Links"
+  }
+}

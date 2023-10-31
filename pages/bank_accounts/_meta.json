@@ -1,0 +1,11 @@
+{
+  "create_bank_account": {
+    "title": "Create Bank Account"
+  },
+  "detail_bank_account": {
+    "title": "Detail Bank Account"
+  },
+  "list_bank_account": {
+    "title": "List Bank Account"
+  }
+}

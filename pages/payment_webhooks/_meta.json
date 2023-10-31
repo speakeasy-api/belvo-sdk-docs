@@ -1,0 +1,14 @@
+{
+  "delete_payment_webhooks": {
+    "title": "Delete Payment Webhooks"
+  },
+  "detail_payment_webhooks": {
+    "title": "Detail Payment Webhooks"
+  },
+  "list_payment_webhooks": {
+    "title": "List Payment Webhooks"
+  },
+  "register_payment_webhook": {
+    "title": "Register Payment Webhook"
+  }
+}

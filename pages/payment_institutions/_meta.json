@@ -1,0 +1,8 @@
+{
+  "detail_payment_institution": {
+    "title": "Detail Payment Institution"
+  },
+  "list_payment_institutions": {
+    "title": "List Payment Institutions"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "create_secret_keys": {
+    "title": "Create Secret Keys"
+  },
+  "list_secret_keys": {
+    "title": "List Secret Keys"
+  }
+}
