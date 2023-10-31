@@ -1,18 +1,6 @@
-###### *Payment_Institutions*
+import DetailPaymentInstitution from './detail_payment_institution_content.mdx';
+import {DocsSection} from "/components/Section/section";
 
-## Detail Payment Institution
-
-Get the details about a specific payment institution
-
-{/* rendered from operation template */}
-
-import {LanguageOperation} from "/content/languages";
-import {LanguageSwitch} from "/content/languages";
-
-export const Operation = () => {
-    return <LanguageSwitch langToContent={{}}/>
-}
-
-<Operation />
-
-{/* end rendered section */}
+<DocsSection route={"detail_payment_institution"}>
+    <DetailPaymentInstitution/>
+</DocsSection>

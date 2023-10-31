@@ -1,0 +1,55 @@
+```typescript ListPaymentLinks.ts
+import { Belvo } from "belvo";
+import { OrderingPaymentLinks, StatusPaymentLinks } from "belvo/dist/sdk/models/shared";
+import { RFCDate } from "belvo/dist/sdk/types";
+
+(async() => {
+  const sdk = new Belvo({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
+
+  const res = await sdk.paymentLinks.listPaymentLinks({
+    createdAt: new RFCDate("2022-05-05"),
+    createdAtGt: new RFCDate("2022-05-05"),
+    createdAtGte: new RFCDate("2022-05-04"),
+    createdAtLt: new RFCDate("2022-04-01"),
+    createdAtLte: new RFCDate("2022-03-30"),
+    createdAtRange: [
+      new RFCDate("2"),
+      new RFCDate("0"),
+      new RFCDate("2"),
+      new RFCDate("2"),
+      new RFCDate("-"),
+      new RFCDate("0"),
+      new RFCDate("3"),
+      new RFCDate("-"),
+      new RFCDate("0"),
+      new RFCDate("3"),
+      new RFCDate(","),
+      new RFCDate("2"),
+      new RFCDate("0"),
+      new RFCDate("2"),
+      new RFCDate("2"),
+      new RFCDate("-"),
+      new RFCDate("0"),
+      new RFCDate("5"),
+      new RFCDate("-"),
+      new RFCDate("0"),
+      new RFCDate("4"),
+    ],
+    ordering: OrderingPaymentLinks.MinusCreatedAt,
+    page: 1,
+    pageSize: 100,
+    search: "trai",
+    status: StatusPaymentLinks.Active,
+  });
+
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

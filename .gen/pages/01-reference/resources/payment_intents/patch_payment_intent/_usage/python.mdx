@@ -1,0 +1,30 @@
+```python PatchPaymentIntent.py
+import belvo
+from belvo.models import operations, shared
+
+s = belvo.Belvo(
+    security=shared.Security(
+        password="",
+        username="",
+    ),
+)
+
+
+res = s.payment_intents.patch_payment_intent(id='a3b92311-1888-449f-acaa-49ae28d68fcd', patch_payment_intent_pse=shared.PatchPaymentIntentPse(
+    confirm=True,
+    shared.PatchPaymentIntentsBodyPse(
+        pse=shared.PatchPaymentMethodDetailsPse(
+            password='123456',
+            payer_bank_account='db201c6a-e0ee-4caa-92d6-72b480d6d86f',
+            payer_institution='db201c6a-e0ee-4caa-92d6-72b480d6d86f',
+            payer_token='123456',
+            username='username',
+            username_type='username',
+        ),
+    ),
+))
+
+if res.patch_payment_intent_200_application_json_one_of is not None:
+    # handle response
+    pass
+```

@@ -1,0 +1,19 @@
+```typescript CreatePaymentlink.ts
+import { Belvo } from "belvo";
+
+(async() => {
+  const sdk = new Belvo({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
+
+  const res = await sdk.paymentLinks.createPaymentlink("string");
+
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

@@ -1,0 +1,24 @@
+```python RegisterPaymentWebhook.py
+import belvo
+from belvo.models import shared
+
+s = belvo.Belvo(
+    security=shared.Security(
+        password="",
+        username="",
+    ),
+)
+
+req = shared.PaymentWebhookRequest(
+    auth_header='Authorization',
+    auth_token='Bearer hv7alD71j0dzXf09iKfg7u',
+    name='Your webhook name',
+    url='https://mycompany.com/security/webhook',
+)
+
+res = s.payment_webhooks.register_payment_webhook(req)
+
+if res.payment_webhooks is not None:
+    # handle response
+    pass
+```

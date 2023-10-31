@@ -1,18 +1,6 @@
-###### *Payment_Transactions*
+import ListPaymentTransactions from './list_payment_transactions_content.mdx';
+import {DocsSection} from "/components/Section/section";
 
-## List Payment Transactions
-
-List all payment transactions associated with your Belvo account.
-
-{/* rendered from operation template */}
-
-import {LanguageOperation} from "/content/languages";
-import {LanguageSwitch} from "/content/languages";
-
-export const Operation = () => {
-    return <LanguageSwitch langToContent={{}}/>
-}
-
-<Operation />
-
-{/* end rendered section */}
+<DocsSection route={"list_payment_transactions"}>
+    <ListPaymentTransactions/>
+</DocsSection>

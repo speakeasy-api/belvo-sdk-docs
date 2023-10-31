@@ -1,0 +1,18 @@
+```python DetailBankAccount.py
+import belvo
+from belvo.models import operations, shared
+
+s = belvo.Belvo(
+    security=shared.Security(
+        password="",
+        username="",
+    ),
+)
+
+
+res = s.bank_accounts.detail_bank_account(id='a3b92311-1888-449f-acaa-49ae28d68fcd')
+
+if res.detail_bank_account_200_application_json_one_of is not None:
+    # handle response
+    pass
+```

@@ -1,18 +1,6 @@
-###### *Customers*
+import DetailCustomer from './detail_customer_content.mdx';
+import {DocsSection} from "/components/Section/section";
 
-## Detail Customer
-
-Get the details about a specific customer
-
-{/* rendered from operation template */}
-
-import {LanguageOperation} from "/content/languages";
-import {LanguageSwitch} from "/content/languages";
-
-export const Operation = () => {
-    return <LanguageSwitch langToContent={{}}/>
-}
-
-<Operation />
-
-{/* end rendered section */}
+<DocsSection route={"detail_customer"}>
+    <DetailCustomer/>
+</DocsSection>

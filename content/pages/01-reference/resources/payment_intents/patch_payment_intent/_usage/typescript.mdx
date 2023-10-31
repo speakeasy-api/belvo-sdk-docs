@@ -1,0 +1,26 @@
+```typescript PatchPaymentIntent.ts
+import { Belvo } from "belvo";
+import { PatchPaymentIntentRequest } from "belvo/dist/sdk/models/operations";
+import { PatchPaymentIntentPse } from "belvo/dist/sdk/models/shared";
+
+(async() => {
+  const sdk = new Belvo({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
+const id: string = "a3b92311-1888-449f-acaa-49ae28d68fcd";
+const patchPaymentIntentPse: PatchPaymentIntentPse = {
+  confirm: true,
+  paymentMethodDetails: "string",
+};
+
+  const res = await sdk.paymentIntents.patchPaymentIntent(id, patchPaymentIntentPse);
+
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

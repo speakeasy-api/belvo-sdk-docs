@@ -1,18 +1,6 @@
-###### *Payment_Institutions*
+import ListPaymentInstitutions from './list_payment_institutions_content.mdx';
+import {DocsSection} from "/components/Section/section";
 
-## List Payment Institutions
-
-List all available payment institutions.
-
-{/* rendered from operation template */}
-
-import {LanguageOperation} from "/content/languages";
-import {LanguageSwitch} from "/content/languages";
-
-export const Operation = () => {
-    return <LanguageSwitch langToContent={{}}/>
-}
-
-<Operation />
-
-{/* end rendered section */}
+<DocsSection route={"list_payment_institutions"}>
+    <ListPaymentInstitutions/>
+</DocsSection>

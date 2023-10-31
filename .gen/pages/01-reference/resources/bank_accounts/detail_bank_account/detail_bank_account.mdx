@@ -1,18 +1,6 @@
-###### *Bank_Accounts*
+import DetailBankAccount from './detail_bank_account_content.mdx';
+import {DocsSection} from "/components/Section/section";
 
-## Detail Bank Account
-
-Get the details about a specific bank account
-
-{/* rendered from operation template */}
-
-import {LanguageOperation} from "/content/languages";
-import {LanguageSwitch} from "/content/languages";
-
-export const Operation = () => {
-    return <LanguageSwitch langToContent={{}}/>
-}
-
-<Operation />
-
-{/* end rendered section */}
+<DocsSection route={"detail_bank_account"}>
+    <DetailBankAccount/>
+</DocsSection>

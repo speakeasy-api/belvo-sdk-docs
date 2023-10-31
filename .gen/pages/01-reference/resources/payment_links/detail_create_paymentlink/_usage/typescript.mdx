@@ -1,0 +1,21 @@
+```typescript DetailCreatePaymentlink.ts
+import { Belvo } from "belvo";
+import { DetailCreatePaymentlinkRequest } from "belvo/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Belvo({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
+const accessToken: string = "YggaKvPbM5aJhksu1BEwDI5FKTcUc5wZqNB-wH7MFGU";
+
+  const res = await sdk.paymentLinks.detailCreatePaymentlink(accessToken);
+
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

@@ -1,18 +1,6 @@
-###### *Payment_Links*
+import CreatePaymentlink from './create_paymentlink_content.mdx';
+import {DocsSection} from "/components/Section/section";
 
-## Create Paymentlink
-
-Create a new payment link to start a hosted-widget payment.
-
-{/* rendered from operation template */}
-
-import {LanguageOperation} from "/content/languages";
-import {LanguageSwitch} from "/content/languages";
-
-export const Operation = () => {
-    return <LanguageSwitch langToContent={{}}/>
-}
-
-<Operation />
-
-{/* end rendered section */}
+<DocsSection route={"create_paymentlink"}>
+    <CreatePaymentlink/>
+</DocsSection>

@@ -1,0 +1,21 @@
+```typescript DeletePaymentWebhooks.ts
+import { Belvo } from "belvo";
+import { DeletePaymentWebhooksRequest } from "belvo/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Belvo({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
+const id: string = "89bd9d8d-69a6-474e-8f46-7cc8796ed151";
+
+  const res = await sdk.paymentWebhooks.deletePaymentWebhooks(id);
+
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

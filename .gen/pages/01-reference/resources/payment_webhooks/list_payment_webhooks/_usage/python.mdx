@@ -1,0 +1,18 @@
+```python ListPaymentWebhooks.py
+import belvo
+from belvo.models import shared
+
+s = belvo.Belvo(
+    security=shared.Security(
+        password="",
+        username="",
+    ),
+)
+
+
+res = s.payment_webhooks.list_payment_webhooks()
+
+if res.payments_webhooks_paginated_response is not None:
+    # handle response
+    pass
+```

@@ -1,0 +1,53 @@
+```typescript ListPaymentInstitutions.ts
+import { Belvo } from "belvo";
+import { RFCDate } from "belvo/dist/sdk/types";
+
+(async() => {
+  const sdk = new Belvo({
+    security: {
+      password: "",
+      username: "",
+    },
+  });
+
+  const res = await sdk.paymentInstitutions.listPaymentInstitutions({
+    country: "COL",
+    countryIn: "COL,BRA",
+    createdAt: new RFCDate("2022-05-05"),
+    createdAtGt: new RFCDate("2022-05-05"),
+    createdAtGte: new RFCDate("2022-05-04"),
+    createdAtLt: new RFCDate("2022-04-01"),
+    createdAtLte: new RFCDate("2022-03-30"),
+    createdAtRange: [
+      new RFCDate("2"),
+      new RFCDate("0"),
+      new RFCDate("2"),
+      new RFCDate("2"),
+      new RFCDate("-"),
+      new RFCDate("0"),
+      new RFCDate("3"),
+      new RFCDate("-"),
+      new RFCDate("0"),
+      new RFCDate("3"),
+      new RFCDate(","),
+      new RFCDate("2"),
+      new RFCDate("0"),
+      new RFCDate("2"),
+      new RFCDate("2"),
+      new RFCDate("-"),
+      new RFCDate("0"),
+      new RFCDate("5"),
+      new RFCDate("-"),
+      new RFCDate("0"),
+      new RFCDate("4"),
+    ],
+    page: 1,
+    pageSize: 100,
+  });
+
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

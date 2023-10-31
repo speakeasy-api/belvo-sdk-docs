@@ -1,0 +1,18 @@
+```python DeletePaymentWebhooks.py
+import belvo
+from belvo.models import operations, shared
+
+s = belvo.Belvo(
+    security=shared.Security(
+        password="",
+        username="",
+    ),
+)
+
+
+res = s.payment_webhooks.delete_payment_webhooks(id='d8d69a67-4e0f-4467-8c87-96ed151a05df')
+
+if res.status_code == 200:
+    # handle response
+    pass
+```

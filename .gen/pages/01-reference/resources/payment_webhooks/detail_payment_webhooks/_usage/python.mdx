@@ -1,0 +1,18 @@
+```python DetailPaymentWebhooks.py
+import belvo
+from belvo.models import operations, shared
+
+s = belvo.Belvo(
+    security=shared.Security(
+        password="",
+        username="",
+    ),
+)
+
+
+res = s.payment_webhooks.detail_payment_webhooks(id='a3b92311-1888-449f-acaa-49ae28d68fcd')
+
+if res.payment_webhook is not None:
+    # handle response
+    pass
+```
