@@ -4830,7 +4830,7 @@ components:
           type: string
           format: date
           example: '2022-03-03'
-        example: "[2022-03-03,2022-05-04]"
+        example: ['2022-03-03','2022-05-04']
     id__in:
       name: id__in
       in: query
@@ -4843,7 +4843,7 @@ components:
           type: string
           format: uuid
           example: 6b3dea0f-be29-49d1-aabe-1a6d588642e6
-        example: "[24ccab1d-3a86-4136-a6eb-e04bf52b356f,beb2b197-3cf7-428d-bef3-f415c0d57509]"
+        example: ['24ccab1d-3a86-4136-a6eb-e04bf52b356f','beb2b197-3cf7-428d-bef3-f415c0d57509']
     customer__type:
       name: customer__type
       required: false
