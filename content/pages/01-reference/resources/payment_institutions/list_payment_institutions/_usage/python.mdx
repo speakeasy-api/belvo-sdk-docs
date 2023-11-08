@@ -12,6 +12,7 @@ s = belvo.Belvo(
 
 
 res = s.payment_institutions.list_payment_institutions(country='COL', country_in='COL,BRA', created_at=dateutil.parser.parse('2022-05-05').date(), created_at_gt=dateutil.parser.parse('2022-05-05').date(), created_at_gte=dateutil.parser.parse('2022-05-04').date(), created_at_lt=dateutil.parser.parse('2022-04-01').date(), created_at_lte=dateutil.parser.parse('2022-03-30').date(), created_at_range=[
+    dateutil.parser.parse('[').date(),
     dateutil.parser.parse('2').date(),
     dateutil.parser.parse('0').date(),
     dateutil.parser.parse('2').date(),
@@ -33,6 +34,7 @@ res = s.payment_institutions.list_payment_institutions(country='COL', country_in
     dateutil.parser.parse('-').date(),
     dateutil.parser.parse('0').date(),
     dateutil.parser.parse('4').date(),
+    dateutil.parser.parse(']').date(),
 ], page=1, page_size=100)
 
 if res.payments_institutions_paginated_response is not None:

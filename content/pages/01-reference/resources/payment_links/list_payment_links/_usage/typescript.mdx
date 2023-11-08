@@ -18,6 +18,7 @@ import { RFCDate } from "belvo/dist/types";
     createdAtLt: new RFCDate("2022-04-01"),
     createdAtLte: new RFCDate("2022-03-30"),
     createdAtRange: [
+      new RFCDate("["),
       new RFCDate("2"),
       new RFCDate("0"),
       new RFCDate("2"),
@@ -39,6 +40,7 @@ import { RFCDate } from "belvo/dist/types";
       new RFCDate("-"),
       new RFCDate("0"),
       new RFCDate("4"),
+      new RFCDate("]"),
     ],
     ordering: OrderingPaymentLinks.MinusCreatedAt,
     page: 1,

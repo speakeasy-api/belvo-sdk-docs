@@ -17,6 +17,7 @@ req = operations.ListCustomersRequest(
     created_at_lt=dateutil.parser.parse('2022-04-01').date(),
     created_at_lte=dateutil.parser.parse('2022-03-30').date(),
     created_at_range=[
+        dateutil.parser.parse('[').date(),
         dateutil.parser.parse('2').date(),
         dateutil.parser.parse('0').date(),
         dateutil.parser.parse('2').date(),
@@ -38,9 +39,11 @@ req = operations.ListCustomersRequest(
         dateutil.parser.parse('-').date(),
         dateutil.parser.parse('0').date(),
         dateutil.parser.parse('4').date(),
+        dateutil.parser.parse(']').date(),
     ],
     customer_type='INDIVIDUAL',
     id_in=[
+        '[',
         '2',
         '4',
         'c',
@@ -114,6 +117,7 @@ req = operations.ListCustomersRequest(
         '5',
         '0',
         '9',
+        ']',
     ],
     page=1,
     page_size=100,

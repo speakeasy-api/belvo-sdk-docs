@@ -39,6 +39,7 @@ req = operations.ListPaymentIntentsRequest(
     created_at_lt=dateutil.parser.parse('2022-04-01').date(),
     created_at_lte=dateutil.parser.parse('2022-03-30').date(),
     created_at_range=[
+        dateutil.parser.parse('[').date(),
         dateutil.parser.parse('2').date(),
         dateutil.parser.parse('0').date(),
         dateutil.parser.parse('2').date(),
@@ -60,6 +61,7 @@ req = operations.ListPaymentIntentsRequest(
         dateutil.parser.parse('-').date(),
         dateutil.parser.parse('0').date(),
         dateutil.parser.parse('4').date(),
+        dateutil.parser.parse(']').date(),
     ],
     customer='24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d',
     customer_in=[
@@ -138,6 +140,7 @@ req = operations.ListPaymentIntentsRequest(
         '4',
     ],
     id_in=[
+        '[',
         '2',
         '4',
         'c',
@@ -211,6 +214,7 @@ req = operations.ListPaymentIntentsRequest(
         '5',
         '0',
         '9',
+        ']',
     ],
     ordering=components.OrderingPaymentIntents.UPDATED_AT,
     page=1,
